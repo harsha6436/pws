@@ -1,0 +1,1 @@
+CREATE PROCEDURE `update_accounts`(IN `uid` INT(11), IN `psal` DECIMAL(10,2), IN `bsal` DECIMAL(10,2), IN `tval` DECIMAL(10,2)) NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER UPDATE user_accounts SET payable_salary = psal, basic_salary = bsal, tax_value = tval WHERE user_id = uid
